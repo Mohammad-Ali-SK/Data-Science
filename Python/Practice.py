@@ -1,25 +1,12 @@
-from tkinter import *
-from tkinter import ttk
-from googletrans import Translator,LANGUAGES
+from plyer import notification
+import time
 
 
-root = Tk()
-root.title("Translator")
-root.config(bg='Red')
-root.geometry('500x700')
-
-heading = Label(root,text='Translator',font=('Time New Roman',20))
-heading.place(x=50,y=20,height=30,width=400)
-
-frame = Frame(root).pack(side=BOTTOM)
-
-
-
-
-
-
-
-
-
-
-root.mainloop()
+if __name__ == '__main__':
+    while True:
+        notification.notify(
+            title = "*** Take Rest ***",
+            message = "Ho a hla  ia d lka d lhoia ;alhsdjfi asdhoa alsdh",
+            timeout = 5)
+        time.sleep(10)
+    
